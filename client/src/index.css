@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Electrolize&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Electrolize', sans-serif;
+  @apply bg-gray-50;
+}
+
+.ant-btn-primary {
+  background-color: #1677ff;
+}
+
+@media (min-width: 768px) {
+  /* body {
+    overflow: hidden;
+  } */
+
+  .categories::-webkit-scrollbar {
+    display: none;
+  }
+
+  .products::-webkit-scrollbar {
+    display: none;
+  }
+
+}
+
+.menu-links .anticon {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-link.active {
+  @apply text-[#1677ff];
+}
+
+.prevent-select {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
